@@ -63,3 +63,21 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: MainMenu
+    clip: {fileID: 8300000, guid: e5a17bf4ab9ec7a4f80a4dc695e54f85, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: ef600b4205f1e2d4b894ee8e7a934203, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: InGame
+    clip: {fileID: 8300000, guid: 48221341b742e5c4da11e2a252d30c1a, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
