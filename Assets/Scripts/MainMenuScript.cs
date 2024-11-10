@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
     private AudioManager audioM;
+    private Scene scene;
+    public bool isGameOver;
 
     [Header("Sounds")]
     [SerializeField]
@@ -21,19 +23,28 @@ public class MainMenuScript : MonoBehaviour
         audioM = AudioManager.instance;
 
         audioM.PlayBackgroundMusic(levelBGSound);
+
+        scene = SceneManager.GetActiveScene();
+
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(scene.name == "MainGame" && isGameOver)
+        {
+            LoadScene();
+        }
+
+    
     }
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(levelToLoad);
+        isGameOver= false;
+        SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
+        
     }
-
 
 }

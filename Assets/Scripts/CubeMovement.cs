@@ -6,6 +6,8 @@ public class CubeMovement : MonoBehaviour
 {
     private AudioManager audioM;
 
+    
+
     [Header("Key Bindings")]
     [SerializeField]
     private KeyCode jumpKey;
@@ -30,7 +32,6 @@ public class CubeMovement : MonoBehaviour
         {
             transform.Translate(Vector3.up*0.5f);
             audioM.Play(jumpSound);
-
         }
         
     }
