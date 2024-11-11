@@ -32,7 +32,7 @@ public class MainMenuScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(scene.name == "MainGame" && isGameOver)
+        if(scene.name == "MainGame" && Time.timeSinceLevelLoad> 20.0f)
         {
             LoadScene();
         }
